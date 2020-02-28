@@ -1,5 +1,5 @@
-name: pi
-version: 18-1
+name: ce-team-test-pi-gadget
+version: 18-1.1
 summary: Raspberry Pi gadget
 description: |
  Support files for booting Raspberry Pi.
@@ -89,6 +89,10 @@ parts:
 
 
 slots:
+  serial-port:
+    path: /dev/serial-port-modem
+    usb-vendor: 0x0658
+    usb-product: 0x0200
   bcm-gpio-0:
     interface: gpio
     number: 0
